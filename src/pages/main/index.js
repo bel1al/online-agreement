@@ -20,7 +20,7 @@ const MainPage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.target);
-    postData('/ticket/upload', data)
+    postData('/agreement/upload', data)
       .then((response) => {
         if (response.ok) {
           Swal.fire({
